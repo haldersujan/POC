@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Home</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<title>One Of Top Up</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             h3 {
                 font-size: 22px;
@@ -43,37 +42,39 @@
                 background: #f0f0f5;
             }
         </style>
-</head>
-<body>
-
-	<div class="wrapper">
-                <h2>Welcome !</h2>
-                <h2> You can perform the below actions.</h2>
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="Register" method="post">
+                <h2>Create a Regular contribution instruction for your pension pot.</h2>
                 
                 <div class="form-wrapper">
-                    <a href="/InsurancePOC/UpdateContributionLimit.jsp" >Update contribution limit.</a>
+                    <label for="">Top Up Amount £ </label>
+                    <input name="topUpAmount" type="text" class="form-control">
                 </div>
                 <div class="form-wrapper">
-                    <a href="/InsurancePOC/OneOffTopUp.jsp" >Top Up your retirement pot.</a>
-                </div>
-                
-                <div class="form-wrapper">
-                    <a href="/InsurancePOC/RegularTopUp.jsp" >Create a Regular Top Up for your retirement pot.</a>
-                </div>
-                 <div class="form-wrapper">
-                    <a href="/InsurancePOC/CurrentPotValue.jsp" >Explore you current pot value.</a>
+                    <label for="">Frequency</label>
+                    <select name="frequency" class="form-control">
+   						 <option value="monthly">Monthly</option>
+   						 <option value="quarterly">Quarterly</option>
+   						 <option value="halfyearly">Half Yearly</option>
+  					</select>
                 </div>
                 <div class="form-wrapper">
-                    <a href="/InsurancePOC/MonthlyStatements.jsp" >Your monthly statements.</a>
+                    <label for="">Start Date </label>
+                    <input name="startDate" type="text" class="form-control">
                 </div>
                 <div class="form-wrapper">
-                    <a href="/InsurancePOC/PensionGifting.jsp" >Pension Gifting.</a>
+                    <label for="">Account Number</label>
+                    <input name="accno" type="text" class="form-control">
                 </div>
-                 <div class="form-wrapper">
-                    <a href="/InsurancePOC/TransactionSummary.jsp" >Transaction Summary.</a>
+                <div class="form-wrapper">
+                    <label for="">Sortcode</label>
+                    <input name="sortcode" type="text" class="form-control">
                 </div>
+                <!--  <input type="submit" value="Register Now" class="button"> -->
+                <button>Confirm Regular Contributionp</button>
+            </form>
 		</div>
-
-	
-</body>
+	</body>
 </html>
